@@ -38,25 +38,56 @@
     height: 92vmin;
     border: 2px solid black;
     display: grid;
-    grid-template-rows: repeat(18, 1fr);
-    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-columns: repeat(30, 1fr);
 }
 
 .head{
-    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
-    border: 2px solid rgb(34, 4, 34); 
+ 
     transform: scale(1.02);
-    border-radius: 9px;
+    border-radius: 0px;
+	
+	    background: #7fa103;
+    border: 0;
+    box-shadow: 0px 0px 4px black;
+}
+div#board .head {
+    position: relative;
+}
+div#board .head:after {
+    content: "";
+    position: absolute;
+    background: white;
+    top: 15%;
+    left: 12%;
+    width: 31%;
+    height: 31%;
 }
 
+div#board .head:before {
+    content: "";
+    position: absolute;
+    background: white;
+    top: 15%;
+    right: 12%;
+    width: 31%;
+    height: 31%;
+}
 .snake{
-    background-color: purple;
-    border: .25vmin solid white;
-    border-radius: 12px;
+       background: #bfe425;
+    transform: scale(1.02);
+    border-radius: 0px;
+	
+	
+    border: 0;
+    box-shadow: 0px 0px 4px black;
 }
 
 .food{
-    background: linear-gradient(red, purple);
-    border: .25vmin solid black;
-    border-radius: 8px;
+ transform: scale(1.02);
+    border-radius: 0px;
+	
+	    background: #de0048;
+    border: 0;
+    box-shadow: 0px 0px 4px black;
 }
